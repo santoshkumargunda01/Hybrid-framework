@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CHROME on WINDOWS LOCAL"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="129.430">
+  <properties />
+  
+  
+            <testcase name="Sbaddtocartverification" time="129.430" classname="com.shoebuy.scripts.Sbaddtocart" />
+      
+</testsuite>

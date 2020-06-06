@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="15" guice-stage="DEVELOPMENT" name="Failed suite [Automation]" parallel="tests">
+  <parameter name="environment" value="cloudSauceLabs"/>
+  <parameter name="suiteExecuted" value="Regression"/>
+  <parameter name="executionType" value="Sequential"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="80"/>
+  <parameter name="automationName" value="Selenium"/>
+  <parameter name="platformName" value="Windows 7"/>
+  <test name="CHROME on WINDOWS SAUCELABS(failed)" parallel="tests">
+    <parameter name="environment" value="cloudSauceLabs"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="browserVersion" value="80"/>
+    <parameter name="automationName" value="Selenium"/>
+    <parameter name="platformName" value="Windows 7"/>
+    <classes>
+      <class name="com.automation.scripts.SearchFlight">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.automation.scripts.SearchFlight -->
+      <class name="com.automation.scripts.Login">
+        <methods>
+          <include name="afterTest"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.automation.scripts.Login -->
+    </classes>
+  </test> <!-- CHROME on WINDOWS SAUCELABS(failed) -->
+</suite> <!-- Failed suite [Automation] -->

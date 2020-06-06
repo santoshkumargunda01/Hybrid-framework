@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="15" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Shoebuy]" parallel="tests">
+  <parameter name="automationName" value="Selenium"/>
+  <parameter name="browserVersion" value="34"/>
+  <parameter name="environment" value="local"/>
+  <parameter name="platformName" value="Windows 7"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="executionType" value="Sequential"/>
+  <parameter name="suiteExecuted" value="Regression"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="FIREFOX on WINDOWS LOCAL(failed)" parallel="tests">
+    <parameter name="automationName" value="Selenium"/>
+    <parameter name="environment" value="local"/>
+    <parameter name="browserVersion" value="34"/>
+    <parameter name="platformName" value="Windows 7"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.shoebuy.scripts.Sbaddtocart">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="Sbaddtocartverification"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.shoebuy.scripts.Sbaddtocart -->
+    </classes>
+  </test> <!-- FIREFOX on WINDOWS LOCAL(failed) -->
+</suite> <!-- Failed suite [Shoebuy] -->

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation" parallel="tests" thread-count="15"	preserve-order="true">
+	<parameter name="suiteExecuted" value="Regression" />
+	<parameter name="executionType" value="Sequential" />
+	
+	<!-- WEB WINDOWS LOCAL -->
+
+	<test name="CHROME on WINDOWS LOCAL">
+		<parameter name="automationName" value="Selenium" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserVersion" value="80" />
+		<parameter name="platformName" value="Windows 10" />
+		<parameter name="environment" value="local" />
+		<classes>
+			<class name="com.automation.scripts.SearchFlight" />
+		</classes>
+	</test>
+
+	 <test name="IE on WINDOWS LOCAL">
+		<parameter name="automationName" value="Selenium" />
+		<parameter name="browser" value="ie" />
+		<parameter name="browserVersion" value="11" />
+		<parameter name="platformName" value="Windows 7" />
+		<parameter name="environment" value="local" />
+		<classes>
+			<class name="com.automation.scripts.Login" />
+		</classes>
+	</test>
+
+	 <test name="CHROME on WINDOWS SAUCELABS">
+		<parameter name="automationName" value="Selenium" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserVersion" value="80" />
+		<parameter name="platformName" value="Windows 7" />
+		<parameter name="environment" value="cloudSauceLabs" />
+		<classes>
+			<class name="com.automation.scripts.Login" />
+		</classes>
+	</test>  
+
+
+
+</suite>
